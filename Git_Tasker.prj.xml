@@ -136,9 +136,9 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1616360326159</cdate>
 		<name>Git Tasker</name>
-		<pids>280,183,278,279,165,167,150,277</pids>
+		<pids>277,279,167,280,165,183,150,278</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>275,281,272,151,152,171,179,273,180,276,181,170,185</tids>
+		<tids>275,273,170,180,171,272,152,181,151,281,179,276,185</tids>
 		<tsort>Alpha</tsort>
 		<Share sr="Share">
 			<d>&lt;h3&gt;A project to use git with Tasker&lt;/h3&gt;
@@ -663,7 +663,7 @@ git checkout -b "%input"</Str>
 	</Task>
 	<Task sr="task171">
 		<cdate>1616423358543</cdate>
-		<edate>1616429681318</edate>
+		<edate>1616453580716</edate>
 		<id>171</id>
 		<nme>GT - ..Folder</nme>
 		<pri>100</pri>
@@ -751,7 +751,7 @@ git push</Str>
 	</Task>
 	<Task sr="task180">
 		<cdate>1616448285877</cdate>
-		<edate>1616452547615</edate>
+		<edate>1616453493982</edate>
 		<id>180</id>
 		<nme>GT - ..Config Push</nme>
 		<pri>100</pri>
@@ -782,7 +782,7 @@ The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3">1</Str>
+			<Str sr="arg2" ve="3">0</Str>
 			<Str sr="arg3" ve="3">cd "%gitfolder"
 
 git remote add origin '%input'
@@ -976,7 +976,7 @@ fi
 		<edate>1616451264428</edate>
 		<id>273</id>
 		<nme>GT - .Commit</nme>
-		<pri>6</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
@@ -1212,7 +1212,7 @@ git commit -m "%input"</Str>
 	</Task>
 	<Task sr="task275">
 		<cdate>1616369644762</cdate>
-		<edate>1616447994753</edate>
+		<edate>1616453115513</edate>
 		<id>275</id>
 		<nme>GT - Bash</nme>
 		<Action sr="act0" ve="7">
@@ -1308,7 +1308,7 @@ git commit -m "%input"</Str>
 	</Task>
 	<Task sr="task281">
 		<cdate>1616376308584</cdate>
-		<edate>1616448295822</edate>
+		<edate>1616453578033</edate>
 		<id>281</id>
 		<nme>GT - ..Config User</nme>
 		<pri>100</pri>

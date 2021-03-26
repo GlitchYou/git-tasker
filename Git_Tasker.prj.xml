@@ -136,9 +136,9 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1616360326159</cdate>
 		<name>Git Tasker</name>
-		<pids>280,277,183,278,167,150,165,279</pids>
+		<pids>165,280,183,150,278,279,277,167</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>275,273,181,281,185,171,151,276,179,186,152,170,180,272</tids>
+		<tids>152,181,273,275,276,281,170,151,185,272,186,171,179,180</tids>
 		<tsort>Alpha</tsort>
 		<Share sr="Share">
 			<d>&lt;h3&gt;A project to use git with Tasker&lt;/h3&gt;
@@ -663,7 +663,7 @@ git checkout -b "%input"</Str>
 	</Task>
 	<Task sr="task171">
 		<cdate>1616423358543</cdate>
-		<edate>1616510640702</edate>
+		<edate>1616737016415</edate>
 		<id>171</id>
 		<nme>GT - ..Folder</nme>
 		<pri>100</pri>
@@ -751,9 +751,9 @@ git push</Str>
 	</Task>
 	<Task sr="task180">
 		<cdate>1616448285877</cdate>
-		<edate>1616453493982</edate>
+		<edate>1616736975080</edate>
 		<id>180</id>
-		<nme>GT - ..Config Push</nme>
+		<nme>GT - ...2 Config Push</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>360</code>
@@ -798,9 +798,9 @@ git push -u origin "$b"</Str>
 	</Task>
 	<Task sr="task181">
 		<cdate>1616448377559</cdate>
-		<edate>1616735238872</edate>
+		<edate>1616736980997</edate>
 		<id>181</id>
-		<nme>GT - ..Create SSH Key</nme>
+		<nme>GT - ...1 Config SSH Key</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>37</code>
@@ -1005,9 +1005,9 @@ The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tas
 	</Task>
 	<Task sr="task272">
 		<cdate>1616360375585</cdate>
-		<edate>1616734904537</edate>
+		<edate>1616736988817</edate>
 		<id>272</id>
-		<nme>GT - ...Termux Config</nme>
+		<nme>GT - ...0 Termux Config</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>300</code>
@@ -1330,7 +1330,7 @@ The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker
 	</Task>
 	<Task sr="task276">
 		<cdate>1616369964643</cdate>
-		<edate>1616456805224</edate>
+		<edate>1616737140777</edate>
 		<id>276</id>
 		<nme>GT - TEST</nme>
 		<pri>100</pri>

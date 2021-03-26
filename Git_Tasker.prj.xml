@@ -136,9 +136,9 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1616360326159</cdate>
 		<name>Git Tasker</name>
-		<pids>150,183,278,167,277,279,165,280</pids>
+		<pids>280,277,183,278,167,150,165,279</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>152,275,151,272,171,273,276,185,281,181,186,180,170,179</tids>
+		<tids>275,273,181,281,185,171,151,276,179,186,152,170,180,272</tids>
 		<tsort>Alpha</tsort>
 		<Share sr="Share">
 			<d>&lt;h3&gt;A project to use git with Tasker&lt;/h3&gt;
@@ -230,7 +230,7 @@
 	</Project>
 	<Task sr="task151">
 		<cdate>1616412924122</cdate>
-		<edate>1616454372592</edate>
+		<edate>1616734499255</edate>
 		<id>151</id>
 		<nme>GT - .Log</nme>
 		<pri>6</pri>
@@ -392,7 +392,7 @@ git checkout "%ld_selected"</Str>
 	</Task>
 	<Task sr="task152">
 		<cdate>1616415640776</cdate>
-		<edate>1616426235830</edate>
+		<edate>1616510927690</edate>
 		<id>152</id>
 		<nme>GT - .Branch</nme>
 		<pri>6</pri>
@@ -663,7 +663,7 @@ git checkout -b "%input"</Str>
 	</Task>
 	<Task sr="task171">
 		<cdate>1616423358543</cdate>
-		<edate>1616453580716</edate>
+		<edate>1616510640702</edate>
 		<id>171</id>
 		<nme>GT - ..Folder</nme>
 		<pri>100</pri>
@@ -798,9 +798,10 @@ git push -u origin "$b"</Str>
 	</Task>
 	<Task sr="task181">
 		<cdate>1616448377559</cdate>
-		<edate>1616452716243</edate>
+		<edate>1616735238872</edate>
 		<id>181</id>
 		<nme>GT - ..Create SSH Key</nme>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
@@ -879,10 +880,10 @@ am broadcast -a SSH -e stout "$stout"</Str>
 	</Task>
 	<Task sr="task185">
 		<cdate>1616412924122</cdate>
-		<edate>1616454363513</edate>
+		<edate>1616510943860</edate>
 		<id>185</id>
 		<nme>GT - .Pull</nme>
-		<pri>6</pri>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">GT - Bash</Str>
@@ -890,7 +891,7 @@ am broadcast -a SSH -e stout "$stout"</Str>
 				<var>%priority</var>
 			</Int>
 			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3">1</Str>
+			<Str sr="arg2" ve="3">0</Str>
 			<Str sr="arg3" ve="3">cd "%gitfolder"
 git pull</Str>
 			<Str sr="arg4" ve="3"/>
@@ -903,7 +904,7 @@ git pull</Str>
 	</Task>
 	<Task sr="task186">
 		<cdate>1616455738072</cdate>
-		<edate>1616456556177</edate>
+		<edate>1616511095315</edate>
 		<id>186</id>
 		<nme>GT - .Clone</nme>
 		<pri>100</pri>
@@ -1004,7 +1005,7 @@ The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tas
 	</Task>
 	<Task sr="task272">
 		<cdate>1616360375585</cdate>
-		<edate>1616427339686</edate>
+		<edate>1616734904537</edate>
 		<id>272</id>
 		<nme>GT - ...Termux Config</nme>
 		<pri>100</pri>
@@ -1065,7 +1066,7 @@ fi
 
 if ! [ -x "$(command -v git)" ]; then
     pkg update &amp;&amp; pkg upgrade
-    pkg install git
+    pkg install git openssh
 fi
 </Str>
 			<Int sr="arg2" val="0"/>

@@ -2,7 +2,7 @@
 	<Profile sr="prof150" ve="2">
 		<cdate>1616411858347</cdate>
 		<clp>true</clp>
-		<edate>1616426017862</edate>
+		<edate>1616835872897</edate>
 		<flags>8</flags>
 		<id>150</id>
 		<mid0>151</mid0>
@@ -20,7 +20,7 @@
 	<Profile sr="prof165" ve="2">
 		<cdate>1616411858347</cdate>
 		<clp>true</clp>
-		<edate>1616449149056</edate>
+		<edate>1616835873560</edate>
 		<flags>8</flags>
 		<id>165</id>
 		<mid0>152</mid0>
@@ -38,7 +38,7 @@
 	<Profile sr="prof167" ve="2">
 		<cdate>1616420902098</cdate>
 		<clp>true</clp>
-		<edate>1616421419245</edate>
+		<edate>1616777814589</edate>
 		<flags>8</flags>
 		<id>167</id>
 		<limit>true</limit>
@@ -58,7 +58,7 @@
 	<Profile sr="prof183" ve="2">
 		<cdate>1616411858347</cdate>
 		<clp>true</clp>
-		<edate>1616449971831</edate>
+		<edate>1616835872117</edate>
 		<flags>8</flags>
 		<id>183</id>
 		<mid0>181</mid0>
@@ -76,7 +76,7 @@
 	<Profile sr="prof277" ve="2">
 		<cdate>1616371921159</cdate>
 		<clp>true</clp>
-		<edate>1616429692606</edate>
+		<edate>1616835882717</edate>
 		<flags>8</flags>
 		<id>277</id>
 		<mid0>273</mid0>
@@ -91,7 +91,7 @@
 	<Profile sr="prof278" ve="2">
 		<cdate>1616371921159</cdate>
 		<clp>true</clp>
-		<edate>1616426163736</edate>
+		<edate>1616835881805</edate>
 		<flags>8</flags>
 		<id>278</id>
 		<mid0>273</mid0>
@@ -106,7 +106,7 @@
 	<Profile sr="prof279" ve="2">
 		<cdate>1616371921159</cdate>
 		<clp>true</clp>
-		<edate>1616429693250</edate>
+		<edate>1616835883163</edate>
 		<flags>8</flags>
 		<id>279</id>
 		<mid0>273</mid0>
@@ -121,7 +121,7 @@
 	<Profile sr="prof280" ve="2">
 		<cdate>1616371921159</cdate>
 		<clp>true</clp>
-		<edate>1616429692117</edate>
+		<edate>1616835882253</edate>
 		<flags>8</flags>
 		<id>280</id>
 		<mid0>273</mid0>
@@ -136,9 +136,9 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1616360326159</cdate>
 		<name>Git Tasker</name>
-		<pids>165,280,183,150,278,279,277,167</pids>
+		<pids>165,278,150,167,279,277,183,280</pids>
 		<psort>ActiveAlpha</psort>
-		<tids>152,181,273,275,276,281,170,151,185,272,186,171,179,180</tids>
+		<tids>273,275,151,276,185,281,170,152,181,186,171,180,179,272</tids>
 		<tsort>Alpha</tsort>
 		<Share sr="Share">
 			<d>&lt;h3&gt;A project to use git with Tasker&lt;/h3&gt;
@@ -392,7 +392,7 @@ git checkout "%ld_selected"</Str>
 	</Task>
 	<Task sr="task152">
 		<cdate>1616415640776</cdate>
-		<edate>1616510927690</edate>
+		<edate>1616835677432</edate>
 		<id>152</id>
 		<nme>GT - .Branch</nme>
 		<pri>6</pri>
@@ -504,11 +504,30 @@ git branch -D '%ld_selected'</Str>
 			<code>548</code>
 			<Str sr="arg0" ve="3">'%ld_selected' deleted</Str>
 			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>Ok</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act16" ve="7">
-			<code>43</code>
+			<code>548</code>
+			<Str sr="arg0" ve="3">Canceled</Str>
+			<Int sr="arg1" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%td_button</lhs>
+					<op>2</op>
+					<rhs>Cancel</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act17" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act18" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">GT - Bash</Str>
 			<Int sr="arg1">
@@ -525,29 +544,29 @@ git checkout '%ld_selected'</Str>
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act18" ve="7">
+		<Action sr="act19" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">'%ld_selected' selected</Str>
 			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act19" ve="7">
-			<code>38</code>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>43</code>
 		</Action>
 		<Action sr="act20" ve="7">
-			<code>43</code>
+			<code>38</code>
 		</Action>
 		<Action sr="act21" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act22" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">This branch has already been selected</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
-		<Action sr="act22" ve="7">
+		<Action sr="act23" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act23" ve="7">
+		<Action sr="act24" ve="7">
 			<code>38</code>
 		</Action>
 		<Action sr="act3" ve="7">
@@ -654,7 +673,7 @@ git checkout -b "%input"</Str>
 	</Task>
 	<Task sr="task170">
 		<cdate>1616420909733</cdate>
-		<edate>1616421394866</edate>
+		<edate>1616777814589</edate>
 		<id>170</id>
 		<Action sr="act0" ve="7">
 			<code>300</code>
@@ -663,7 +682,7 @@ git checkout -b "%input"</Str>
 	</Task>
 	<Task sr="task171">
 		<cdate>1616423358543</cdate>
-		<edate>1616737016415</edate>
+		<edate>1616836478415</edate>
 		<id>171</id>
 		<nme>GT - ..Folder</nme>
 		<pri>100</pri>
@@ -751,9 +770,9 @@ git push</Str>
 	</Task>
 	<Task sr="task180">
 		<cdate>1616448285877</cdate>
-		<edate>1616736975080</edate>
+		<edate>1616836235871</edate>
 		<id>180</id>
-		<nme>GT - ...2 Config Push</nme>
+		<nme>GT - ..Config Push</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>360</code>
@@ -776,6 +795,19 @@ The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker
 			<Int sr="arg7" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%input</lhs>
+					<op>5</op>
+					<rhs>^git@</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">GT - Bash</Str>
 			<Int sr="arg1">
@@ -798,10 +830,10 @@ git push -u origin "$b"</Str>
 	</Task>
 	<Task sr="task181">
 		<cdate>1616448377559</cdate>
-		<edate>1616736980997</edate>
+		<edate>1616836178166</edate>
 		<id>181</id>
-		<nme>GT - ...1 Config SSH Key</nme>
-		<pri>6</pri>
+		<nme>GT - ...1 Create SSH Key</nme>
+		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
@@ -904,7 +936,7 @@ git pull</Str>
 	</Task>
 	<Task sr="task186">
 		<cdate>1616455738072</cdate>
-		<edate>1616511095315</edate>
+		<edate>1616835802167</edate>
 		<id>186</id>
 		<nme>GT - .Clone</nme>
 		<pri>100</pri>
@@ -1005,7 +1037,7 @@ The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tas
 	</Task>
 	<Task sr="task272">
 		<cdate>1616360375585</cdate>
-		<edate>1616736988817</edate>
+		<edate>1616836113701</edate>
 		<id>272</id>
 		<nme>GT - ...0 Termux Config</nme>
 		<pri>100</pri>
